@@ -6,5 +6,13 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   plugins: ['@typescript-eslint', 'react'],
-  rules: {},
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowExpressions: true,
+      },
+    ],
+    'prettier/prettier': 'warn',
+  },
 };
