@@ -1,8 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { getFPTime } from './utils';
 
 function App() {
+  setTimeout(() => {
+    // 获取首次绘制时间
+    const FPTime = getFPTime();
+    console.log('FPTime: ', FPTime);
+  }, 2000);
+
   return (
     <div className="App">
       <header className="App-header">
