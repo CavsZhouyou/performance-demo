@@ -8,7 +8,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': [
-      'error',
+      'warn',
       {
         allowExpressions: true,
       },
